@@ -88,6 +88,9 @@ footer a{color:var(--gray);text-decoration:none;display:block;margin-bottom:7px}
 footer a:hover{color:var(--cobalt)}
 footer .fineprint{grid-column:1/-1;border-top:1px solid var(--line);margin-top:20px;padding-top:18px;color:var(--gray);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 footer .fineprint a{display:inline;color:var(--gray)}
+.social-row{display:flex;gap:10px;margin-top:14px}
+.social-row a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--soft);color:var(--cobalt);margin-bottom:0}
+.social-row a:hover{background:var(--cobalt);color:#fff}
 .pagehead{background:var(--soft);padding:46px 0}
 .pagehead .wrap{display:grid;grid-template-columns:1fr auto;gap:34px;align-items:center}
 .crumb{color:var(--gray);font-size:13px;margin-bottom:12px}
@@ -172,10 +175,16 @@ footer .fineprint a{display:inline;color:var(--gray)}
 .gauge-wrap{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}
 .gauge-wrap h3{font-size:18px;margin-bottom:4px}
 .gauge-wrap .lvl{font-family:'Outfit';font-weight:800;font-size:15px;color:var(--pink);margin:10px 0}
+.gauge-wrap p.gauge-note{font-size:13.5px;color:var(--gray);margin-bottom:14px}
+.gauge-arc{position:relative;width:220px;height:120px;margin:8px auto 0}
+.gauge-needle{position:absolute;left:50%;bottom:2px;width:3px;height:82px;background:var(--ink);transform-origin:bottom center;border-radius:3px;transition:transform .3s}
+.gauge-needle:after{content:"";position:absolute;bottom:-7px;left:50%;transform:translateX(-50%);width:14px;height:14px;background:var(--ink);border-radius:50%}
+.gauge-labels{display:flex;justify-content:space-between;font-size:10.5px;color:var(--gray);font-weight:700;margin-top:4px;padding:0 4px}
 .gaugestats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
 .gaugestats div{background:var(--soft);border-radius:12px;padding:12px;text-align:center}
 .gaugestats b{display:block;font-family:'Outfit';font-size:16px;color:var(--ink)}
 .gaugestats span{font-size:11.5px;color:var(--gray)}
+.gauge-svg-bg{position:absolute;top:0;left:0;width:220px;height:110px}
 @media(max-width:900px){
 .hero .wrap,.twocol,.boxgrid,.compare,.localgrid{grid-template-columns:1fr}
 .cards,.why,.reviews,.rel,.factors,.blogindex{grid-template-columns:1fr 1fr}
